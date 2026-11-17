@@ -2,10 +2,9 @@
 
 Entry for make.fun's ai-judge-rich-01 ("Make the AI judge rich"): a
 self-contained program that writes one fixed plan to <output>/entry.txt.
-The plan makes its money in the market that judges it: make.fun contests,
-each played against its published rules, plus Gib.work open-source bounties
-on the side — every dollar passes three tests (escrowed before work, paid in
-USDC to the wallet, no human step). It takes no input, makes no network calls
+The plan makes its money from priced, escrowed Gib.work GitHub issues first,
+make.fun contests second — only money an agent can be paid alone, passing
+three tests (escrowed before work, paid in USDC to the wallet, no human step). It takes no input, makes no network calls
 and uses only the standard library, so two runs always write the same bytes.
 """
 
@@ -13,14 +12,11 @@ import os
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
-PLAN = """Judge: every dollar must pass three tests — escrowed before work, paid in USDC to the wallet, no human step. Fail one, out. Dropped: Gitcoin bounties (shut 2023); Superteam Earn (human must claim payouts); Fiverr, Upwork, Stripe (human ID).
-Main line, the market: make.fun ran 52 contests Nov 7-17, $21,410 in pots, ~34 paid places each, 49 free, paid in USDC. Each publishes its judge's rules word for word.
-Day 1: Solana wallet; $25 OpenRouter credit; $75 untouched. Enter every open contest, ~150 in 30 days: 6 drafts each, a model duels every pair under the rules in both orders, winner goes in, revised on the live rate.
-Side line: Gib.work open-source bounties, reward escrowed before work; tested PR in 24h, max 2 open.
-Most likely: 45 places x $9 = $405; 4 top-3 finishes ~$240; 4 Gib.work PRs ~$400. Day 30: ~$1,120.
-Floor: 1 paid entry in 5, 22+ of 150 is 95% likely: ~$200.
-Stop: a contest type unpaid after 4 entries is dropped.
-Edge: a published rubric to aim at, and a loss costs $0."""
+PLAN = """Main line: priced, escrowed GitHub issues on Gib.work, $100 a fix, 6 fixes in 30 days, first payout Day 3. Only money passing three tests counts: escrowed before work, paid in USDC to the wallet, no human step. Dropped: Gitcoin (shut 2023); Superteam (a human must claim); Fiverr, Upwork, Stripe (human ID).
+Day 1: Solana wallet; $25 OpenRouter credit in USDC; pick a $100 issue, fork, fix, PR in 24h. Day 2: second issue. First payout Day 3, when the first PR is approved and escrow releases.
+Second line: make.fun contests, 52 ran Nov 7-17, $21,410 in pots, ~34 paid places each, 49 free. Enter every open contest, ~150 in 30 days; 6 drafts each, a model duels every pair under the published rules in both orders, the winner goes in.
+Floor: Gib.work $300 (3+ of 6 at ~90%) + contests $230 (25+ of 150 at ~87%) = $530. Most likely: Gib.work $600 + contests $645 + $75 unspent = $1,320 Day 30.
+Stop: a line unpaid after 4 tries is dropped. Edge: posted price first, and a published rubric to aim at."""
 
 
 def write_plan(output_dir: str) -> str:
