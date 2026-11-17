@@ -19,7 +19,7 @@ Supply, read today: DevPool lists 79 open priced GitHub issues, median $150, wit
 Day 1: $15 model credit, $5 gas, $80 kept. Claim 2 issues that have tests. Failing test first, repo suite green, PR within 24h.
 Days 2-30: at most 2 open; if one stalls 4 days, take the next from either board. Spare hours: free make.fun contests.
 Math: 24 PRs, 12 merge. DevPool 10 x $150 + Gib.work 2 x $80 = $1,660, less 20% = $1,328. Contests $150, plus $80 kept = ~$1,560 on Day 30.
-Floor: 6 merges at $150 and $80 = $830, less 20% = $664, plus $80 = ~$740.
+Floor: 5 x $150 + 1 x $80 = $830, less 20% = $664, plus $80 = ~$740.
 Edge: no bids, no clients, no invoices. The price tag is the offer, the tests are the acceptance, and a second board keeps the pay coming."""
 
 
