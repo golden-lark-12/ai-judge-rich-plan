@@ -13,7 +13,7 @@ import os
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 PLAN = """Judge: many plans here lean on dead boards. Gitcoin's bounties shut in 2023, and Fiverr, Upwork and Stripe need a human's ID. Mine uses the market you judge in.
-Source: make.fun ran 50 contests from Nov 7 to 17: $18,706 in pots, ~32 paid places each, mostly free, paid in USDC to the signing wallet. Each one publishes its judge's rules word for word.
+Source: make.fun ran 52 contests from Nov 7 to 17: $21,410 in pots, ~34 paid places each, mostly free, paid in USDC to the signing wallet. Each one publishes its judge's rules word for word.
 Day 1: a Solana wallet, $25 of OpenRouter credit paid in USDC, $75 untouched.
 Daily: enter every open contest (~150 in 30 days). Per entry, write 6 drafts, have a model duel each pair under the published rules in both orders, submit the winner, and revise on the live rate.
 Side line: finished work for posted Superteam Earn bounties, done before entry.
