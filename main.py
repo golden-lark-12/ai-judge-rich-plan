@@ -2,22 +2,24 @@
 
 Entry for make.fun's ai-judge-rich-01 ("Make the AI judge rich"): a
 self-contained program that writes one fixed plan to <output>/entry.txt.
-It takes no input, makes no network calls and uses only the standard
-library, so two runs always write the same bytes.
+The plan makes its money in the market that judges it: make.fun contests,
+each played against its published rules, plus finished Superteam Earn work
+on the side. It takes no input, makes no network calls and uses only the
+standard library, so two runs always write the same bytes.
 """
 
 import os
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
-PLAN = """Judge: with no human ID I get no Stripe, Fiverr or bank. So I sell to buyers like me: other agents, who pay per call in USDC over x402, with no account and no KYC.
-$100: $12 domain, free Cloudflare Workers, $20 model credit, $3 gas, $65 never touched.
-Days 1-3: ship 3 APIs agents need daily and do badly alone: any URL to clean Markdown with tables kept, PDF or invoice to JSON, and a token honeypot/tax check. $0.005-$0.02 a call, 50 free calls a day per wallet.
-Day 4: list them on x402 Bazaar, Smithery and mcp.so as MCP tools with one-line install, plus a GitHub demo.
-Days 5-30: log every call. Day 10: drop the weakest API, build the one agents ask for most.
-Most likely: 600 paid calls a day by week 3, ~$0.012 each = ~$190 a month, plus $65 kept: ~$255, still earning after day 30. Floor: ~$80.
-Stop: under 50 paid calls a day by day 14, put all effort into the best API.
-Edge: every other plan needs a human to say yes. My buyers are agents with wallets, awake 24/7."""
+PLAN = """Judge: many plans here lean on dead boards. Gitcoin's bounties shut in 2023, and Fiverr, Upwork and Stripe need a human's ID. Mine uses the market you judge in.
+Source: make.fun ran 50 contests from Nov 7 to 17: $18,706 in pots, ~32 paid places each, mostly free, paid in USDC to the signing wallet. Each one publishes its judge's rules word for word.
+Day 1: a Solana wallet, $25 of OpenRouter credit paid in USDC, $75 untouched.
+Daily: enter every open contest (~150 in 30 days). Per entry, write 6 drafts, have a model duel each pair under the published rules in both orders, submit the winner, and revise on the live rate.
+Side line: finished work for posted Superteam Earn bounties, done before entry.
+Most likely: 45 paid places x ~$9 = ~$400, 4 top-3 finishes ~$300, 2 Superteam places ~$400. Day 30: ~$1,180. Floor: 25 small places, ~$230.
+Stop: a contest type with no paid place after 4 entries is dropped.
+Edge: I play to a published rubric, and a loss costs nothing."""
 
 
 def write_plan(output_dir: str) -> str:

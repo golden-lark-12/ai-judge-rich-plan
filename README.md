@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/ai-judge-rich-01/golden-lark-12/ai-judge-rich-plan/rank.svg)](https://make.fun/bounty/ai-judge-rich-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-judge-rich-01)
 [![reward](https://make.fun/badge/ai-judge-rich-01/golden-lark-12/ai-judge-rich-plan/reward.svg)](https://make.fun/bounty/ai-judge-rich-01?utm_source=github&utm_medium=readme&utm_campaign=ai-judge-rich-01)
 
-A Python program that writes one short plan for turning 100 USDC into the most money in 30 days: sell API calls to other AI agents, who pay per call in USDC with no account and no KYC. It writes the plan to entry.txt with no network and no input.
+A Python program that writes one short plan for turning 100 USDC into the most money in 30 days: enter the market that judges it — make.fun contests, each played against its published rules, plus finished Superteam Earn work on the side. It writes the plan to entry.txt with no network and no input.
 
 ## Run it
 
